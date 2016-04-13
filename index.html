@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
 
 </head>
@@ -11,18 +12,56 @@
  <body>
      <div class="container-fluid">
        <div class="row bloctop">
-           <div class="col-md-12">
+                <!-- navbar -->
+               <nav class="navbar navbar-inverse navbar-fixed-top">
+                   <div class="col-xs-12 col-sm-12  col-md-7">
+                       <div class="navbar-header">
+                           <a class="navbar-brand" href="#">cineadict</a>
+                       </div>
+                       <ul class="nav navbar-nav">
+                           <li class="active"><a href="#">page d'accueil</a></li>
+                           <li><a href="#">filmes</a></li>
+                           <li><a href="#">series</a></li>
+                           <li><a href="#">Documentaires</a></li>
+                           <li><a href="#">Emissions TV</a></li>
+                           <form class="navbar-form navbar-left" role="search">
+                               <div class="form-group">
+                                   <input type="text" class="form-control" placeholder="Recherche">
+                               </div>
+                           </form>
+                       </ul>
+                   </div>
+                   <!-- navbar fin -->
+                   <!-- login  -->
+                   <div class="col-md-5 col-sm-offset-0">
+                       <form id="signin" class="navbar-form navbar-right" role="form">
 
-           </div>
+                           <div class="input-group">
+                               <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                               <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">
+                           </div>
 
+                           <div class="input-group">
+                               <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                               <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
+                           </div>
 
-
+                           <button type="submit" class="btn btn-primary">Login</button>
+                       </form>
+                   </div>
+                   <!-- login fin -->
+               </nav>
 
 
        </div>
          <div class="row blocmid">
              <div class="col-md-12">
+                 <div class="row">
 
+
+
+
+                 </div>
              </div>
 
 
