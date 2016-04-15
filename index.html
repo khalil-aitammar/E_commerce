@@ -17,14 +17,15 @@
         <!-- navbar -->
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="col-xs-12 col-sm-12  col-md-7">
-                <div class="navbar-header">
+                <div class="navbar-header" >
                     <a class="navbar-brand" href="#">cineadict</a>
+
                 </div>
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" >
                     <li class="active"><a href="#">page d'accueil</a></li>
                     <li><a href="#">filmes</a></li>
                     <li><a href="/E_commerce/index.html#/series">series</a></li>
-                    <li><a href="#">Documentaires</a></li>
+                    <li><a href="#">Documentaires </a></li>
                     <li><a href="#">Emissions TV</a></li>
                     <form class="navbar-form navbar-left" role="search">
                         <div class="form-group">
@@ -35,22 +36,23 @@
             </div>
             <!-- navbar fin -->
             <!-- login  -->
-            <div class="col-md-5 col-sm-offset-0">
+            <div class="col-md-5 col-sm-offset-0" ng-controller="loginController">
+       
                 <form id="signin" class="navbar-form navbar-right" role="form">
 
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                        <input id="email" type="email" class="form-control" name="email" value=""
-                               placeholder="Email Address">
+                        <input id="email"  class="form-control" name="email" value=""
+                               placeholder="Email Address" ng-model="login">
                     </div>
 
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                         <input id="password" type="password" class="form-control" name="password" value=""
-                               placeholder="Password">
+                               placeholder="Password" ng-model="mp">
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Login</button>
+                    <button type="submit" class="btn btn-primary" ng-click="sub()">Login</button>
                 </form>
             </div>
             <!-- login fin -->
@@ -83,9 +85,12 @@
 <script type="text/javascript" src="js/angular.js"></script>
 <script type="text/javascript" src="js/angular-route.js"></script>
 <script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="src/controllers/loginController.js"></script>
 <!--<script src="src/routes/route.js"></script>
 <script src="src/controllers/pageControllers.js"> </script> -->
+<script>
 
+</script>
 </body>
 
 
