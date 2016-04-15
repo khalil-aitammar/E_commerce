@@ -36,9 +36,15 @@
             </div>
             <!-- navbar fin -->
             <!-- login  -->
-            <div class="col-md-5 col-sm-offset-0" ng-controller="loginController">
-       
-                <form id="signin" class="navbar-form navbar-right" role="form">
+            <div class="col-md-5 col-sm-offset-0" ng-controller="loginController" ng-init="formup=false">
+                <div class="authentification" ng-hide="formup">
+                    <img src="https://maxcdn.icons8.com/Color/PNG/48/Business/approve-48.png" title="Approve" width="48">
+                    khalil ait ammar
+                    </div>
+
+                </div>
+                <form id="signin" class="navbar-form navbar-right" role="form" ng-hide="!formup" >
+
 
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
